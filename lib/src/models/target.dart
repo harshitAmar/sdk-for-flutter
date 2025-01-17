@@ -51,7 +51,7 @@ class Target implements Model {
       providerId: map['providerId']?.toString(),
       providerType: map['providerType'].toString(),
       identifier: map['identifier'].toString(),
-      expired: map['expired'],
+      expired: map['expired'] ?? false,
     );
   }
 

@@ -148,7 +148,7 @@ class Session implements Model {
       deviceModel: map['deviceModel'].toString(),
       countryCode: map['countryCode'].toString(),
       countryName: map['countryName'].toString(),
-      current: map['current'],
+      current: map['current']??false,
       factors:
           List<String>.from(map['factors']?.map((x) => x.toString()) ?? []),
       secret: map['secret'].toString(),
